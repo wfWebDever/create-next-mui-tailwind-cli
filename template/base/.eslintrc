@@ -1,0 +1,58 @@
+{
+  "plugins": ["prettier", "simple-import-sort", "import"],
+  "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
+  "rules": {
+    "prettier/prettier": 2,
+    "arrow-parens": [2, "as-needed"],
+    "comma-dangle": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "no-nested-ternary": 1,
+    "no-new": 0,
+    "no-param-reassign": 1,
+    "no-unused-vars": 2,
+    "no-use-before-define": 0,
+    "object-curly-newline": 0,
+    "func-style": 0,
+    "react/jsx-props-no-spreading": 0,
+    "default-param-last": 0,
+    "import/no-unresolved": [
+      2,
+      {
+        "ignore": ["^swiper", "^echarts"]
+      }
+    ],
+
+    "react/forbid-prop-types": 2,
+    "react/button-has-type": 2,
+    "react/no-unstable-nested-components": 2,
+    "import/newline-after-import": 2,
+    "simple-import-sort/imports": [
+      2,
+      {
+        "groups": [
+          // Side effect imports.
+          ["^\\u0000"],
+          // Third packages. `react` related packages come first.
+          ["^react", "^@?\\w"],
+          // Internal packages.
+          ["^@/\\w"],
+          // Parent imports. Put `..` last. Other relative imports. Put same-folder imports and `.` last.
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$", "^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+          // Css relative imports.
+          ["^.+\\.(css|less|scss)$"]
+        ]
+      }
+    ],
+    "no-shadow": 0,
+    "no-console": [1, { "allow": ["warn", "error"] }],
+    "@typescript-eslint/no-explicit-any": 1,
+    "import/no-extraneous-dependencies": [
+      2,
+      {
+        "devDependencies": true
+      }
+    ]
+  }
+}

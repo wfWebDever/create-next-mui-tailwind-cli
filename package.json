@@ -1,0 +1,34 @@
+{
+  "name": "create-next-mui-tailwind-app",
+  "version": "1.0.4",
+  "description": "Create Next.js apps with MUI and Tailwind CSS (optionally with Apollo)",
+  "main": "index.js",
+  "bin": {
+    "create-next-mui-tailwind-app": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "template"
+  ],
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "inquirer": "^8.2.6",
+    "shelljs": "^0.8.5"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "react",
+    "next",
+    "nextjs",
+    "mui",
+    "tailwind",
+    "apollo",
+    "graphql",
+    "create-app"
+  ],
+  "author": "wei feng / xinyilan2005@gmail.com",
+  "license": "MIT"
+}
