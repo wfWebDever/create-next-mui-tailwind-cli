@@ -22,10 +22,11 @@ When creating a new project, you will be asked if you want to include Apollo Cli
 
 ### Used
 
-`npx create-next-mui-tailwind-app my-app
+`npx create-next-mui-tailwind-app my-app`
+
 or
-yarn create next-mui-tailwind-app my-app
-`
+
+`yarn create next-mui-tailwind-app my-app`
 
 ## Project Structure
 
